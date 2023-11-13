@@ -1,0 +1,94 @@
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.w {
+  background-image: url("imiđes/w.jpeg");
+  background-size: 150px;
+
+}
+
+.a {
+  background-image: url("imiđes/a.jpg");
+  background-size: 150px;
+}
+
+.s {
+  background-image: url("imiđes/s.jpg");
+  background-size: 150px;
+}
+
+.d {
+  background-image: url("imiđes/d.jpeg");
+  background-size: 150px;
+}
+
+.j {
+  background-image: url("imiđes/j.jpg");
+  background-size: 150px;
+}
+
+.k {
+  background-image: url("imiđes/k.jpg");
+  background-size: 150px;
+}
+
+.l {
+  background-image: url("imiđes/l.png");
+  background-size: 150px;
+}
+
+.x {
+  background-image: url("imiđes/bs.jpg");
+  background-size: 150px;
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
