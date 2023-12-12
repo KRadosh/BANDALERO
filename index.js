@@ -1,5 +1,26 @@
-var imee = prompt("What is your nejm?");
+var ljudi = ["Robi", "Nikola", "Marko šč", "Bandalo", "Luka", "Filip"];
+var neprijatelji = {
+  'Robi': ["Golf", "Nikola", "Bandalo", "Luka", "Filip"],
+  'Nikola': ["Mazda", "Marko šč", "Bandalo"],
+  'Marko šč': ["Nikola"],
+  'Bandalo': ["Kristijan", "Nikola" ],
+  'Luka': ["Robi", "Nikola", "Filip"],
+  'Filip': ["Nikola", "Marko šč", "Luka"]
+};
+function identificirajSe(ljudi){
+  var imee = prompt("What is your nejm?");
+  if (ljudi.includes(imee)) {
+    alert("Dobrodošao, " + imee);
+  }
+  else {
+    alert(imee + " nije na mom popisu sudionika, reci istinu da bi saznao istinu!\n\nPS. popis sudionika: " + (ljudi.join(', ')));
+    identificirajSe(ljudi);
+  }
+}
+identificirajSe(ljudi);
+
 const buttons = document.querySelectorAll(".drum");
+
 var fankšn = {
   f_w: "bandalo.mp3",
   f_a: "te.mp3",
@@ -9,6 +30,8 @@ var fankšn = {
   f_k: "ti.mp3",
   f_l: "kaze.mp3",
 };
+
+
 
 function muzika(ime) {
   new Audio("sounds/" + ime).play();
