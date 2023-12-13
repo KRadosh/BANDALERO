@@ -11,14 +11,23 @@ function identificirajSe(ljudi){
   var imee = prompt("What is your nejm?");
   if (ljudi.includes(imee)) {
     alert("Dobrodošao, " + imee);
+    return imee;
   }
   else {
     alert(imee + " nije na mom popisu sudionika, reci istinu da bi saznao istinu!\n\nPS. popis sudionika: " + (ljudi.join(', ')));
     identificirajSe(ljudi);
   }
 }
-identificirajSe(ljudi);
+var imee = identificirajSe(ljudi);
 
+function odredeNeprijatelja(enemiz) {
+  var max = enemiz.length;
+  res = Math.floor(Math.random() * (max));
+  return res;
+}
+
+var neprijatelj = neprijatelji[imee][odredeNeprijatelja((neprijatelji[imee]))];
+alert(neprijatelj);
 const buttons = document.querySelectorAll(".drum");
 
 var fankšn = {
